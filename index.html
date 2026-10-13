@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Ask Me</title>
+  <title>Recipe Generator</title>
   <link rel="stylesheet" href="style.css">
   <script src="scripts.js" defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,17 +12,22 @@
 <body>
 
   <header>
-    <a href="index.html" class="header-text">Ask Me</a>
+    <a href="index.html" class="header-text">Recipe Generator</a>
   </header>
 
   <main>
 
     <div class="card border shadow">
-      <h2>Ask me anything 👋</h2>
-      <p>Change this line to say what your AI answers questions about.</p>
+      <h2>What do you want to cook? 🍳</h2>
+      <p>Type the name of a food and get a recipe for it.</p>
     </div>
 
-    <!-- Your agent will add the form and the answer here (Lecture 9, step 5) -->
+    <form id="recipe-form">
+      <input id="food" type="text" placeholder="e.g. Paneer butter masala" required>
+      <button id="generate" type="submit">Generate recipe</button>
+    </form>
+
+    <div id="recipe" hidden></div>
 
   </main>
 
